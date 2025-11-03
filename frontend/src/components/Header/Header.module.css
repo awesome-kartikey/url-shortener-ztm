@@ -1,0 +1,49 @@
+.site-header {
+    padding-block: 1.5rem;
+    position: relative;
+  }
+
+  .main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-brand,
+  .footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    text-decoration: none;
+    color: var(--color-text-dark);
+  }
+
+  .logo-icon {
+    height: clamp(2.5rem, 6vw, 4rem);
+  }
+
+  .brand-name {
+    font-family: var(--font-logo);
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .brand-name-light {
+    color: var(--color-background);
+  }
+
+  .admin-btn {
+    position: absolute;
+    top: 1.5rem;
+    right: var(--container-padding);
+    padding: 0.6rem 1.25rem;
+    white-space: nowrap;
+    z-index: 10;
+    height: 50px;
+    font-size: 1.25rem;
+    font-weight: 800;
+    text-decoration: none;
+    width: auto;
+    margin: auto;
+  }

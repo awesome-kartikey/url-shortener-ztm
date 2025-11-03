@@ -1,0 +1,101 @@
+.site-footer {
+    background: linear-gradient(1.88deg,
+        var(--color-surface-dark-start) -5.15%,
+        var(--color-surface-dark-end) 89.22%);
+    color: var(--color-text-light);
+    padding-block: var(--spacing-l) var(--spacing-m);
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+  }
+
+  .site-footer::before,
+  .site-footer::after {
+    content: "";
+    position: absolute;
+    width: 440px;
+    height: 430px;
+    background: rgba(45, 82, 111, 0.9);
+    filter: blur(128px);
+    z-index: 0;
+    border-radius: 50%;
+  }
+
+  .site-footer::before {
+    bottom: -10%;
+    left: -5%;
+  }
+
+  .site-footer::after {
+    top: 15%;
+    right: -5%;
+  }
+
+  .site-footer .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .footer-brand {
+    color: var(--color-text-light);
+    justify-content: center;
+    margin-bottom: var(--spacing-l);
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-l) var(--spacing-xxl);
+    max-width: fit-content;
+    margin-inline: auto;
+  }
+
+  .footer-column h3 {
+    font-family: var(--font-heading);
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    margin-bottom: var(--spacing-s);
+  }
+
+  .footer-column p {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--color-text-muted-light);
+  }
+
+  .social-links {
+    list-style: none;
+    display: flex;
+    gap: var(--spacing-s);
+  }
+
+  .social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: var(--radius-lg);
+    background-color: var(--color-background);
+    box-shadow: var(--shadow-interactive);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .social-icon:hover,
+  .social-icon:focus-visible {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-interactive-hover);
+    outline: 2px solid var(--color-accent);
+  }
+
+  .social-icon img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer-copyright {
+    text-align: center;
+    margin-top: var(--spacing-l);
+    padding-top: var(--spacing-m);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--color-text-muted-light);
+  }
